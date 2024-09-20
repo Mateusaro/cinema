@@ -13,11 +13,6 @@ public class CinemaController {
     private CinemaService cinemaService;
 
     @GetMapping
-    public List<Cinema> getAllCinemas() {
-        return cinemaService.getAllCinemas();
-    }
-
-    @GetMapping("/historico")
     public List<CinemaHistorico> getHistorico() {
         return cinemaService.getHistorico();
     }

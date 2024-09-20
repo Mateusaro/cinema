@@ -28,7 +28,6 @@ public class CinemaService {
                 .orElseThrow(() -> new RuntimeException("Cinema não encontrado"));
         existingCinema.setNome(cinema.getNome());
         existingCinema.setCep(cinema.getCep());
-        // Atualizar os outros campos...
 
         existingCinema.setUltimaAcao("UPDATE");
         existingCinema.setDataUltimaAlteracao(LocalDateTime.now());
